@@ -47,4 +47,5 @@ void quick_sort(int *array, size_t size);
 
 /* protypes Shell sort*/
 void shell_sort(int *array, size_t size);
+listint_t *swap_node(listint_t *node, listint_t **list);
 #endif /* SORT_H */
