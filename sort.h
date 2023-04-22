@@ -45,7 +45,13 @@ int lomuto_partition(int *array, size_t size, int left, int right);
 void lomuto_sort(int *array, size_t size, int left, int right);
 void quick_sort(int *array, size_t size);
 
-/* protypes Shell sort*/
+/* Protypes Shell sort*/
 void shell_sort(int *array, size_t size);
 listint_t *swap_node(listint_t *node, listint_t **list);
+
+/* Prototypes Cocktail sort */
+void swap_node_ahead(listint_t **list, listint_t **tail, listint_t **shaker);
+void swap_node_behind(listint_t **list, listint_t **tail, listint_t **shaker);
+void cocktail_sort_list(listint_t **list);
+
 #endif /* SORT_H */
